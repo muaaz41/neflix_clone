@@ -1,23 +1,10 @@
-const scrollButton = document.getElementById('scrollButton');
-const movieScroll = document.getElementById('movieScroll');
-let isScrolled = false; // Track scroll state
+const scrollContainer = document.querySelector('.scroll-container');
+const scrollAmount = 500; // Adjust this value to change scroll amount
 
-scrollButton.addEventListener('click', () => {
-    if (!isScrolled) {
-        
-        movieScroll.scrollBy({
-            top: 0,
-            left: 500, 
-            behavior: 'smooth'
-        });
-        scrollButton.textContent = "<-"; 
-    } else {
-        movieScroll.scrollBy({
-            top: 0,
-            left: -500, 
-            behavior: 'smooth'
-        });
-        scrollButton.textContent = ">"; 
-    }
-    isScrolled = !isScrolled; 
+document.getElementById('scrollButton1').addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+document.getElementById('scrollButton').addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
 });
