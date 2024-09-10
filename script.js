@@ -1,23 +1,20 @@
-const scrollButton = document.getElementById('scrollButton');
-        const movieScroll = document.getElementById('movieScroll');
-        let isScrolled = false; // Track scroll state
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollContainer = document.getElementById('movieScroll');
+    const scrollAmount = 500;
 
-        scrollButton.addEventListener('click', () => {
-            if (!isScrolled) {
-                movieScroll.scrollBy({
-                    top: 0,
-                    left: 500, 
-                    behavior: 'smooth'
-                });
-                scrollButton.textContent = ">"; 
-            } else {
-                // Return back to original
-                movieScroll.scrollBy({
-                    top: 0,
-                    left: -500, 
-                    behavior: 'smooth'
-                });
-                scrollButton.textContent = "<"; 
-            }
-            isScrolled = !isScrolled; 
+    document.getElementById('scrollButton').addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            top: 0,
+            left: scrollAmount,
+            behavior: 'smooth'
         });
+    });
+
+    document.getElementById('scrollButton1').addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            top: 0,
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+});

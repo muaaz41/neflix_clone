@@ -67,6 +67,13 @@
             transform: translate(-200%, -200%);
             width:20px;
         }
+        .scroll-button1 {
+            margin: 0;
+            top: 300%;
+            right: 300%;
+            transform: translate(-300%, -300%);
+            width:20px;
+        }
         .reason-background { 
             padding: 40px 0; 
         }
@@ -115,6 +122,19 @@
             border-radius: 50%;
             padding: 5px; 
         }
+        @media (max-width: 1300px) {
+            .scroll-button1,.scroll-button {
+                margin-left:16px;  
+                margin-right: 16px;  
+    }
+}
+
+        @media (max-width: 4px) {
+            .scroll-button,.scroll-button1 {
+                margin-left:5px;
+                margin-right: 5px;
+    }
+}
     </style>
 </head>
 <body class="text-white flex flex-col items-center">
@@ -227,6 +247,12 @@
             <button id="scrollButton" class="scroll-button bg-gray-800 text-white border border-gray-600 rounded h-24 ml-2" style="margin-right:70px;">
                 <span class="arrow text-xl">&gt;</span>
             </button>
+        </div>
+        <div class="flex justify-between items-center">
+            <button id="scrollButton1" class="scroll-button1 bg-gray-800 text-white border border-gray-600 rounded h-24 ml-2" style="margin-left:160px;">
+                <span class="arrow text-xl">&lt;</span>
+            </button>
+            <div class="flex-grow"></div>
         </div>
         <div class="mt-16 w-full">
             <h3 class="text-1xl font-bold mb-4 text-left ml-10">More Reasons to Join</h2>
