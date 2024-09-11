@@ -53,12 +53,21 @@
         .reason-card {
             background: rgba(58, 15, 15, 0.8);
             border-radius: 10px;
-            padding: 20px;
+            padding: 15px; 
             text-align: center;
-            width: 225px;
-            height: 200px;
+            width: 100%; 
+            max-width: 240px; 
             margin: 10px; 
-            position:relative;
+            height:150px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        @media (min-width: 640px) {
+            .reason-card {
+                height: auto; 
+            }
         }
         .scroll-button {
             margin: 0;
@@ -155,7 +164,7 @@
     <div class="footer-background w-full">
         <div class="w-full pt-10 pb-6">
             <div class="mt-16 w-full">
-                <h3 class="text-1xl font-bold mb-4 text-left ml-10 justify-center">Trending Now</h2>
+                <h3 class="text-1xl font-bold mb-4 text-left ml-10 justify-center">Trending Now</h3>
                     <select class="bg-gray-800 text-white border border-gray-600 rounded p-2 mx-2 mb-4 text-left ml-10">
                         <option>Pakistan</option>
                         <option>Global</option>
@@ -241,29 +250,28 @@
             </button>
             <div class="flex-grow"></div>
         </div>
-        <div class="mt-16 w-full">
-            <h3 class="text-1xl font-bold mb-4 text-left ml-10">More Reasons to Join</h2>
-            <div class="flex flex-wrap justify-center mx-auto" style="max-width: 1000px;">
+        <div class="mt-16 max-w-full mx-auto p-4">
+            <h3 class="text-2xl font-bold mb-4 text-left ml-10">More Reasons to Join</h3>
+            <div class="flex flex-wrap justify-center">
                 <div class="reason-card">
                     <h3 class="font-semibold text-white">Enjoy on your TV</h3>
-                    <p class="text-sm text-white">Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-                    <i class="fas fa-tv"></i>
+                    <p class="text-sm text-gray-300">Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                    <i class="fas fa-tv text-white text-2xl mt-2"></i>
                 </div>
                 <div class="reason-card">
-                    <h3 class="font-semibold">Download your shows to watch offline</h3>
-                    <p class="text-sm">Save your favorites easily and always have something to watch.</p>
-                    <i class="fas fa-download"></i>
+                    <h3 class="font-semibold text-white">Downloads to watch offline</h3>
+                    <p class="text-sm text-gray-300">Save your favorites easily and always have something to watch.</p>
+                    <i class="fas fa-download text-white text-2xl mt-2"></i>
                 </div>
                 <div class="reason-card">
-                    <h3 class="font-semibold">Watch everywhere</h3>
-                    <p class="text-sm">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-                    <i class="fas fa-bullhorn"></i>
-
+                    <h3 class="font-semibold text-white">Watch everywhere</h3>
+                    <p class="text-sm text-gray-300">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    <i class="fas fa-bullhorn text-white text-2xl mt-2"></i>
                 </div>
                 <div class="reason-card">
-                    <h3 class="font-semibold">Create profiles for kids</h3> 
-                    <p class="text-sm">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
-                    <i class="fas fa-user"></i>
+                    <h3 class="font-semibold text-white">Create profiles for kids</h3> 
+                    <p class="text-sm text-gray-300">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+                    <i class="fas fa-user text-white text-2xl mt-2"></i>
                 </div>
             </div>
         </div>
