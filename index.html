@@ -66,15 +66,14 @@
             margin: 0; 
         }
         
-        @media (min-width: 846px) and (max-width: 1103px) {
-            .flex {
+        @media (min-width: 846px) and (max-width: 1120px) {
+            .reason-card {
+                width:auto;
+                max-width: 350px; 
+                margin: 10px; 
                 display: flex;
                 justify-content: center;
                 flex-wrap:wrap
-            }
-            .reason-card {
-                max-width: 350px; 
-                margin: 10px; 
             }
         }
 
@@ -165,30 +164,27 @@
     </style>
 </head>
 <body class="text-white flex flex-col items-center">
-    <div class="footer-background w-full">
-        <div class="bg-custom h-screen flex flex-col justify-center items-center relative">
-            <div class="gradient-overlay"></div>
-            <div class="gradient-overlay"></div>
-            <div class="text-center mt-28 mb-16 z-10">
-                <h1 class="text-5xl font-bold mb-6">Unlimited movies, TV</h1>
-                <h1 class="text-5xl font-bold mb-6">shows, and more</h1>
-                <h3 class="font-semibold mb-6">Starts at Rs 250. Cancel anytime.</h3>
-                <h3 class="font-semibold mb-4">Ready to watch? Enter your email to create or restart your membership.</h3>
-                <div class="flex justify-center mb-6">
-                    <input type="email" placeholder="Email address" class="px-4 py-2 text-black rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
-                    <button class="bg-red-600 text-white font-bold py-2 px-4 rounded-r-md hover:bg-red-700 transition duration-300 ml-2">
-                        Get Started &gt;
-                    </button>
-                </div>
-            <div class="max-w-screen-lg mx-auto" style="max-width:1000px;">
-                <div class="text-red-600 absolute top-8 left-12 ">
-                    <h1 class="text-3xl font-semibold mb-6">NETFLIX</h1>
-                </div>
-                <div class="absolute top-8 right-12 ">
-                    <button class="bg-red-600 text-white font-semibold py-2 px-4 rounded transition duration-300 hover:bg-red-800">
-                        Sign In
-                    </button>
-                </div>
+    <div class="bg-custom h-screen flex flex-col justify-center items-center relative">
+        <div class="gradient-overlay"></div>
+        <div class="gradient-overlay"></div>
+        <div class="text-center mt-28 mb-16 z-10">
+            <h1 class="text-5xl font-bold mb-6">Unlimited movies, TV</h1>
+            <h1 class="text-5xl font-bold mb-6">shows, and more</h1>
+            <h3 class="font-semibold mb-6">Starts at Rs 250. Cancel anytime.</h3>
+            <h3 class="font-semibold mb-4">Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div class="flex justify-center mb-6">
+                <input type="email" placeholder="Email address" class="px-4 py-2 text-black rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                <button class="bg-red-600 text-white font-bold py-2 px-4 rounded-r-md hover:bg-red-700 transition duration-300 ml-2">
+                    Get Started &gt;
+                </button>
+            </div>
+            <div class="text-red-600 absolute top-8 left-12 ">
+                <h1 class="text-3xl font-semibold mb-6">NETFLIX</h1>
+            </div>
+            <div class="absolute top-8 right-12 ">
+                <button class="bg-red-600 text-white font-semibold py-2 px-4 rounded transition duration-300 hover:bg-red-800">
+                    Sign In
+                </button>
             </div>
         </div>
     </div>
